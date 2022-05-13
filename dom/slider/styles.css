@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(204, 204, 204);
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider__container{
+    margin-top: 300px;
+    overflow: hidden;
+}
+
+.slider__track {
+    display: flex;
+    transition: .2s;
+}
+
+.slider__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffefd5;
+    box-sizing: border-box;
+    min-width: 200px;
+    height: 200px;
+    border: 2px solid #444;
+}
+
+.slider__num {
+    font-size: 120px;
+    line-height: 0;
+    text-align: center;
+}
+
+.prev__btn,
+.next__btn {
+    position: absolute;
+    top: 26%;
+    width: auto;
+    cursor: pointer;
+    color: #0091d9;
+    font-weight: 700;
+    font-size: 80px;
+    transition: 0.6s ease;
+}
+
+.prev__btn {
+    left: -85px;
+}
+
+.next__btn {
+    right: -85px;
+}
+
+/* При наведении на кнопки добавляем фон кнопок */
+.prev__btn:hover,
+.next__btn:hover {
+    color: #ff6163;
+}

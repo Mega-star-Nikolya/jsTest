@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<!--!DOCTYPE HTML - обозначает тип документа, а так же начало страницы-->
+<html lang="ru">
+  <!--html lang="ru"- обозначает язык контента страницы-->
+
+  <head>
+    <!--здесь указывается основная служебная информация о документе (начало головы)-->
+    <meta charset="UTF-8" />
+    <!--Правильная кодировка текста-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Юпорт-Этим метатегом мы говорим о том, что ширина должна ровняться ширине экрана, адаптивная верстка-->
+    <title>Задание от LoftSchool | Test JS</title>
+    <!--Название-заголовок странички(Кодировка HTML-страницы)-->
+    <meta name="description" content="Новый контент о чем-то" />
+    <!--description (описание) сайта - заголовок сайта-->
+    <meta name="keywords" content="тут, там" />
+    <!--keywords (ключевые слова) по которым смогут в поисковике найти сайт-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--подключаем стили-->
+  </head>
+  <!--закрытие головы-->
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1 class="heder__title">Модальное окно</h1>
+        <p class="header__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem magnam
+          ratione quasi alias adipisci molestias doloribus, provident eum natus
+          rerum, numquam delectus cum at nobis consectetur deserunt perspiciatis
+          eveniet temporibus.
+        </p>
+        <button class="btn" type="text" id="jsBtn">открыть</button>
+
+        <div class="overlay" id="jsModal">
+          <div class="overlay__window">
+            <div class="modal-container">
+              <a class="close" id="jsClose" href="#">x</a>
+              <div class="content">Hollo, <b>world</b>!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <!-- подключение файла JS -->
+  </body>
+</html>

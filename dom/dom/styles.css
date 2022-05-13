@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(255, 251, 251);
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 56px;
+    color: black;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input {
+    height: 21px;
+}
+
+.blocks {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.item {
+    width: 52px;
+    height: 52px;
+    border:2px solid #000;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    line-height: 1.6;
+    color: rgb(25, 0, 255);
+}
+
+
