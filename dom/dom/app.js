@@ -12,7 +12,8 @@
 //     num.value = '';
 // });
 
-const input = document.querySelector('.input');
+const inputNum = document.querySelector('.input__namber');
+const inputColor = document.querySelector('.input__color');
 const container = document.querySelector('.container');
 
 function getElemWithClass(tag, ...className) {
@@ -45,9 +46,36 @@ function createBlocks(quantity) {
 
 }
 
-input.addEventListener('input', (e) => {
+inputNum.addEventListener('input', (e) => {
   const value = e.target.value; // введённое значение в input
   if (value > 100) return false; // если введенное значение > 100, то завершить функцию обработчика
   createBlocks(value);
 });
 
+const colorTheBlock = (block, color) => {
+  block.style.backgroundColor = color;
+}
+
+let changed = false;
+
+inputColor.addEventListener("change", e => {
+  const color = e.target.value; // введённое значение в input color
+  const items = document.querySelectorAll(".item"); // ищем все item(блочки)
+
+  changed = !changed;
+
+  for (let i = 0; i < items.length; i++) { // проходимся по свем блочкам
+    const currentBlock = items[i]; // сохраняем текущий блок в переменную items[i]
+    const blockNumber = i + 1;
+    let colorToApply = "";
+
+    if (changed) {
+      colorToApply = blockNumber % 2 !== 0 ? color : "#fff"
+    } else {
+      colorToApply = blockNumber % 2 == 0 ? color :"#fff"
+    }
+    colorTheBlock(currentBlock, colorToApply);
+  }
+});
+
+//  console.log(items);

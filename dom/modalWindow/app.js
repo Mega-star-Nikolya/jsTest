@@ -11,6 +11,6 @@ btnClose.onclick = close => {
 }
 
 /* Можно закрывать кликнув по любой области экрана */
-// modal.onclick = close => {
-//     modal.style.display = "none";
-// }
+modal.onclick = close => {
+    modal.style.display = "none";
+}

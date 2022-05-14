@@ -26,8 +26,15 @@
         <h1 class="title">Создание и работа с DOM</h1>
         <h2 class="subtitle">Введите значение от 1 до 100</h2>
         <div class="content">
-          <input type="number" class="input" name="input" autocomplete="off" />
-          <input type="color" value="#000" />
+          <input
+            type="number"
+            min="0"
+            max="100"
+            class="input__namber"
+            name="input"
+            autocomplete="off"
+          />
+          <input type="color" class="input__color" />
         </div>
       </div>
     </div>

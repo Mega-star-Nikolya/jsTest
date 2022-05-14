@@ -26,8 +26,10 @@ body {
     gap: 10px;
 }
 
-.input {
+.input__namber {
+    width: 203px;
     height: 21px;
+
 }
 
 .blocks {
@@ -46,7 +48,7 @@ body {
     vertical-align: middle;
     font-size: 30px;
     line-height: 1.6;
-    color: rgb(25, 0, 255);
+    color: #000;
 }
 
 
